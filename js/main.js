@@ -3,7 +3,7 @@ var canvas, ctx, gridsize;
 
 window.onload = function() {
 	var gridsize_string = prompt("What size do you want you want?  Enter your input in the form RxW, where R is the number of rows and W is the number of columns.");
-	gridsize = gridsize_string.split("x");
+	gridsize = gridsize_string.split("x")).map(Number);
 	canvas = document.getElementById("canvas");
 	canvas.width = gridsize[0]*16+gridsize[0]-1;
 	canvas.height = gridsize[1]*16+gridsize[1]-1;
